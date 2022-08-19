@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## Billboard音乐榜网页设计-2015
 
-You can use the [editor on GitHub](https://github.com/gcnova/music-ranking-template/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+> 很早的练习作品，只是留个纪念，写的不规范，要注意的是许多id未改成class类样式的，容易造成污染，主要还是html+css+jquery
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### 首页
+---
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![image](https://github.com/gcnova/gcnova.github.io/blob/main/images/prev/home.png)
 
-```markdown
-Syntax highlighted code block
+### 榜单
+---
+![image](https://github.com/gcnova/gcnova.github.io/blob/main/images/prev/hot100.png)
 
-# Header 1
-## Header 2
-### Header 3
+### MV
+---
+![image](https://github.com/gcnova/gcnova.github.io/blob/main/images/prev/video.png)
 
-- Bulleted
-- List
+### 资讯
+---
+![image](https://github.com/gcnova/gcnova.github.io/blob/main/images/prev/chart1.png)
 
-1. Numbered
-2. List
+![image](https://github.com/gcnova/gcnova.github.io/blob/main/images/prev/chart2.png)
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gcnova/music-ranking-template/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
