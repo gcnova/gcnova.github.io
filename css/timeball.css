@@ -1,0 +1,34 @@
+﻿@charset "utf-8";
+html,body{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.time{
+	position: relative;
+	width: 100%;
+    height: 340px;
+}
+#screen{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	left: 12px;
+	top: 52px;
+	overflow: hidden;
+}
+span.blue, span.green, span.gray, span.red{
+    position:absolute;
+    font-size:0;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius:5px;
+}
+.blue{background:#06c}
+.green{background:#4eb84a}
+.gray{background:#f3f3f3}
+.red{background:#da4901}

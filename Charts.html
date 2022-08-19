@@ -1,0 +1,600 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Charts</title>
+	<style type="text/css">
+		body {
+			background-color: #000;
+			margin: auto;
+			padding: 0px;
+		}
+
+		#head {
+			height: 50px;
+			background-color: #FFF;
+			padding: 0px;
+		}
+
+		#head ul {
+			list-style-type: none;
+			padding: 0px;
+			margin: auto;
+		}
+
+		#head ul li {
+			float: left;
+			margin: 0px;
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 0px;
+			padding-left: 7%;
+		}
+
+		#head ul li a {
+			text-decoration: none;
+			color: #000;
+			display: block;
+			padding: 15px;
+		}
+
+		#head ul li a:link,
+		#head ul li a:visited {
+			font-size: 18px;
+			color: #000;
+		}
+
+		#head ul li a:hover {
+			background-color: #000;
+			color: #FFF;
+		}
+
+		#timeball {
+			width: 768px;
+			margin: auto;
+			text-align: center;
+		}
+
+		#zhong {
+			height: 775px;
+			width: 972px;
+			color: #FFF;
+			padding-top: 30px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		#gg1 {
+			height: 92px;
+			width: 972px;
+			margin: auto;
+		}
+
+		#gg2 {
+			margin: auto;
+			height: 108px;
+			width: 648px;
+			padding: 50px;
+		}
+
+		#zhong1 {
+			width: 972px;
+			height: 435px;
+			background-color: #000;
+		}
+
+		#zhong2 {
+			background-color: #FFF;
+			padding-top: 20px;
+			float: none;
+			padding-bottom: 20px;
+		}
+
+		#zhong21 {
+			width: 792px;
+			font-family: "Arial Black", Gadget, sans-serif;
+			font-size: 36px;
+			border-top-width: 1px;
+			border-bottom-width: 1px;
+			border-top-style: solid;
+			border-bottom-style: solid;
+			border-top-color: #999;
+			border-bottom-color: #999;
+			margin-top: 40px;
+			margin-right: auto;
+			margin-bottom: auto;
+			margin-left: auto;
+			padding-top: 15px;
+			height: 156px;
+			float: none;
+			padding-bottom: 20px;
+		}
+
+		#zhong22 {
+			width: 230px;
+			height: 156px;
+			float: left;
+		}
+
+		#zhong23 {
+			width: 237px;
+			float: left;
+		}
+
+		#zhong24 {
+			float: left;
+			width: 150px;
+			height: 156px;
+			padding-left: 50px;
+		}
+
+		#zhong25 {
+			width: 792px;
+			font-family: "Arial Black", Gadget, sans-serif;
+			font-size: 36px;
+			border-top-width: 1px;
+			border-bottom-width: 1px;
+			border-top-style: solid;
+			border-bottom-style: solid;
+			border-top-color: #999;
+			border-bottom-color: #999;
+			margin-top: 40px;
+			margin-right: auto;
+			margin-bottom: auto;
+			margin-left: auto;
+			padding-top: 15px;
+			height: 156px;
+			float: none;
+			padding-bottom: 20px;
+		}
+
+		#zhong26 {
+			width: 230px;
+			height: 156px;
+			float: left;
+		}
+
+		#zhong27 {
+			width: 237px;
+			float: left;
+		}
+
+		#zhong28 {
+			float: left;
+			width: 150px;
+			height: 156px;
+			padding-left: 50px;
+		}
+
+		#zhong29 {
+			margin: auto;
+			padding-top: 40px;
+			padding-bottom: 60px;
+			width: 640px;
+		}
+
+		#dt1 {
+			height: 426px;
+		}
+
+		#zhong30 {
+			float: left;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		#zhong31 {
+			float: left;
+			margin-left: 50px;
+			font-size: 18px;
+			text-align: center;
+		}
+
+		#di {
+			height: 400px;
+			color: #FFF;
+			background-color: #3F413E;
+			float: left;
+			width: 100%;
+			background-image: url(images/di1.jpg);
+			background-repeat: no-repeat;
+			background-position: right bottom;
+		}
+
+		#conntu {
+			height: 400px;
+			width: 25%;
+			font-size: 9px;
+			color: #000;
+			font-family: Verdana, Geneva, sans-serif;
+			float: left;
+		}
+
+		#diwenzi {
+			color: #FFF;
+			height: 300px;
+			width: 15%;
+			text-align: left;
+			margin-left: 30px;
+			margin-top: 50px;
+			font-size: 9px;
+			float: left;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		#di #diwenzi p a:link,
+		#yuan #di #diwenzi p a:visited {
+			font-size: 14px;
+			color: #06F;
+			text-decoration: none;
+		}
+
+		#di #diwenzi p a:hover {
+			text-decoration: underline;
+			color: #09F;
+		}
+
+		#diwen2 {
+			height: 300px;
+			width: 18%;
+			float: left;
+			margin-top: 50px;
+			text-align: left;
+			margin-left: 25px;
+			font-family: "Arial Black", Gadget, sans-serif;
+		}
+
+		#di #diwen2 p a:link,
+		#yuan #di #diwen2 p a:visited {
+			color: #999;
+			text-decoration: none;
+			font-size: 10px;
+		}
+
+		#di #diwen2 p a:hover {
+			color: #FFF;
+			text-decoration: underline;
+		}
+
+		#diwen3 {
+			float: left;
+			margin-top: 50px;
+			height: 300px;
+			width: 18%;
+			text-align: left;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		#diwen4 {
+			height: 300px;
+			width: 15%;
+			margin-top: 50px;
+			float: left;
+			text-align: left;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.hong {
+			color: #FD5757;
+			font-size: 16px;
+		}
+
+		.ditu {
+			padding-left: 40px;
+			padding-bottom: 20px;
+			padding-top: 50px;
+		}
+
+		.di1 {
+			font-size: 10px;
+			padding-left: 30px;
+			margin-left: 3px;
+			margin-top: 20px;
+		}
+	</style>
+	<link rel="stylesheet" href="css/timeball.css" type="text/css">
+	<script type="text/javascript" src="js/timeball.js"></script>
+
+
+	<link rel="stylesheet" href="css/style3.css" type="text/css" />
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var kv_num = 0;
+			function nextKv() {
+				$(".control").attr("style", "pointer-events:none");
+				kv_num++;
+				if (kv_num == 4) { kv_num = 0; }
+				$(".kv_pic").animate({ left: -1000 * kv_num }, {
+					easing: 'easeInOutQuad', duration: 500, complete: function () {
+						$(".control").attr("style", "pointer-events:auto");
+					}
+				});
+				$(".kv_word>ul").stop().animate({ left: -340 * kv_num }, { easing: 'easeInOutQuad', duration: 800, complete: function () { } });
+				$(".kv_dot ul li").removeClass("action").eq(kv_num).addClass("action");
+			}
+			function prevKv() {
+				$(".control").attr("style", "pointer-events:none");
+				kv_num--;
+				if (kv_num == -1) { kv_num = 3; }
+				$(".kv_pic").animate({ left: -1000 * kv_num }, {
+					easing: 'easeInOutQuad', duration: 500, complete: function () {
+
+						$(".control").attr("style", "pointer-events:auto");
+					}
+				});
+				$(".kv_word>ul").stop().animate({ left: -340 * kv_num }, { easing: 'easeInOutQuad', duration: 800, complete: function () { } });
+			}
+			$(".control .next").on("click", nextKv);
+			$(".control .prev").on("click", prevKv);
+			// 自动轮播
+			setInterval(nextKv, 3500);
+
+		});
+	</script>
+</head>
+
+<body>
+	<div id="head">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="new.html">News</a></li>
+			<li><a href="Hot100.html">Hot 100</a></li>
+			<li><a href="Videos.html">Videos</a></li>
+			<li><a href="Podcasts.html">Podcasts</a></li>
+			<li><a href="Charts.html">Charts</a></li>
+			<li><a href="login.html">Login</a></li>
+		</ul>
+	</div>
+	<!--head end-->
+	<div class="time">
+		<div id="screen"></div>
+	</div>
+	<div id="zhong">
+		<div id="gg1"><img src="images/gg1.jpg" width="972" height="92" usemap="#Map2" border="0" />
+			<map name="Map2" id="Map2">
+				<area shape="rect" coords="958,3,972,17" href="#" />
+			</map>
+		</div>
+		<div id="gg2"><img src="images/gg2.jpg" width="648" height="108" usemap="#Map" border="0" />
+			<map name="Map" id="Map">
+				<area shape="circle" coords="67,30,16" href="login.html" />
+				<area shape="circle" coords="67,67,15" href="login.html" />
+			</map>
+		</div>
+		<div id="zhong1">
+			<div class="main">
+				<div class="kv">
+					<ul class="kv_pic">
+						<li><img src="images/chart1.jpg" /></li>
+						<li><img src="images/chart2.jpg" alt="" /></li>
+						<li><img src="images/chart3.jpg" alt="" /></li>
+						<li><img src="images/chart4.jpg" alt="" /></li>
+					</ul>
+					<div class="kv_word">
+						<ul>
+							<li>
+								<h3 class="tit1">BUSINESSi</h3>
+
+								<p>STEVE ANGELLO DEFENDS</p>
+								<p>STREAMING,SAYS ARTISTS WHO COMPLAIN DO IT FOR PUBLICITY</p>
+							</li>
+							<li>
+								<h3 class="tit1">DANCE</h3>
+
+								<p>SFX TAPS LIFE IN COLOR'S</p>
+								<P>SEBASTIAN</P>
+								<P>SOLANO FOR CEO OF ID&T NORTH AMERICA/MADE EVENT:EXCLUSIVE</P>
+
+							</li>
+							<li>
+								<h3 class="tit1">DANCE</h3>
+
+								<p>MYSTERYLAND ANNOUNCES 2016</p>
+								<p>DATES,WILL LOWER MINIMUM AGE 19</p>
+							</li>
+							<li>
+								<h3 class="tit1">DANCE</h3>
+
+								<p>INSOMNIAC REVEALS 2015</p>
+								<P>COUNTDOWN NYE LINEUP:KASKADE,DJ SNAKE&MORE</p>
+							</li>
+						</ul>
+					</div>
+					<div class="control">
+						<div class="prev"><img src="images/icons_move_left.jpg" alt="" /></div>
+						<div class="next"><img src="images/icons_move_right.jpg" alt="" /></div>
+					</div>
+					<div class="kv_dot">
+						<ul>
+							<li class="action"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--zhong end-->
+	<div id="zhong2">
+		<div id="zhong21">
+			<div id="zhong22">
+				<p>DANCE </p>
+				<p>11/6/2015</p>
+			</div>
+			<!--zhong22 end-->
+			<div id="zhong23"><img src="images/chart6.jpg" width="237" height="156" /></div>
+			<div id="zhong24">
+				<p>Major Lazer's 'Light It Up' Gets Remix From Nyla & Fuse ODG: Listen</p>
+				<p>&nbsp;</p>
+				<p>by DAVID RISHTY</p>
+			</div>
+		</div>
+		<!--zhong21 end-->
+		<div id="zhong25">
+			<div id="zhong26">
+				<p>DANCE </p>
+				<p>11/6/2015</p>
+			</div>
+			<div id="zhong27"><img src="images/chart7.jpg" width="239" height="155" /></div>
+			<div id="zhong28">
+				<p>Mizan K Talks 'Dark Blue' EP, Directing Her Own Videos & Making Music that Uplifts</p>
+				<p>&nbsp;</p>
+				<p>by PALEY MARTIN</p>
+			</div>
+		</div>
+		<!--zhong25 end-->
+		<div id="zhong29">
+			<div id="dt1"><img src="images/chart13.jpg" width="643" height="426" /></div>
+			<div id="zhong30">DANCE<br />11/6/2015</div>
+
+			<div id="zhong31">Listen to Will Sparks 'Get Lit' on Ultra Records: Exclusive<br /><br />by DAVID RISHTY
+			</div>
+			<div id="zhong32"></div>
+		</div>
+		<div id="zhong25">
+			<div id="zhong26">
+				<p>DANCE </p>
+				<p>11/6/2015</p>
+			</div>
+			<div id="zhong27"><img src="images/chart8.jpg" width="241" height="158" /></div>
+			<div id="zhong28">
+				<p>Mysteryland Announces 2016 Dates, Will Lower Minimum Age to 19</p>
+				<p>&nbsp;</p>
+				<p>by NATALIE WEINER</p>
+			</div>
+		</div>
+		<!--zhong25 end-->
+		<div id="zhong25">
+			<div id="zhong26">
+				<p>DANCE </p>
+				<p>11/6/2015</p>
+			</div>
+			<div id="zhong27"><img src="images/chart9.jpg" width="240" height="158" /></div>
+			<div id="zhong28">
+				<p>David Hasselhoff Stars as Ibiza DJ in Off-Off Broadway Musical</p>
+				<p>&nbsp;</p>
+				<p>by DAVID RISHTY</p>
+			</div>
+		</div>
+		<!--zhong25 end-->
+		<div id="zhong25">
+			<div id="zhong26">
+				<p>DANCE </p>
+				<p>11/6/2015</p>
+			</div>
+			<div id="zhong27"><img src="images/chart10.jpg" width="238" height="157" /></div>
+			<div id="zhong28">
+				<p>Axwell & Ingrosso Tap Pusha T for 'This Time'</p>
+				<p>&nbsp;</p>
+				<p>by ADELLE PLATON</p>
+			</div>
+		</div>
+		<!--zhong25 end-->
+		<div id="zhong25">
+			<div id="zhong26">
+				<p>DANCE </p>
+				<p>11/5/2015</p>
+			</div>
+			<div id="zhong27"><img src="images/chart11.jpg" width="237" height="156" /></div>
+			<div id="zhong28">
+				<p>Nicky Romero Accuses Hardwell of Stealing His Visuals on Twitter</p>
+				<p>&nbsp;</p>
+				<p>by NATALIE WEINER</p>
+			</div>
+		</div>
+		<!--zhong25 end-->
+		<div id="zhong25">
+			<div id="zhong26">
+				<p>AMAS </p>
+				<p>11/5/2015</p>
+			</div>
+			<div id="zhong27"><img src="images/chart12.jpg" width="239" height="158" /></div>
+			<div id="zhong28">
+				<p>Skrillex, Diplo & Justin Bieber's 'Where Are U Now' Up for 2015 AMA Nomination</p>
+				<p>&nbsp;</p>
+				<p>by DAVID RISHTY</p>
+			</div>
+		</div>
+		<!--zhong25 end-->
+		<div id="zhong27"></div>
+
+		<div id="di">
+			<div id="conntu">
+				<p><img src="images/billboard all star.jpg" width="227" height="296" alt="" / class="ditu"> </p>
+				<p><span class="di1">© 2015 Nova. All Rights Reserved.</span></p>
+			</div>
+			<!--di conntu end-->
+			<div id="diwenzi">
+				<p class="hong">Magazine</p>
+				<p>&nbsp;</p>
+				<p><a href="#">Customer Service </a>
+				<p><a href="#">Subscribe</a></p>
+				<p><a href="#">Buy this issue</a></p>
+				<p>&nbsp;</p>
+				<p class="hong">Billboard biz</p>
+				<p>&nbsp;</p>
+				<p>The online extension of Billboard magazine, www.billboard.com/biz is the essential online destination
+					for the music business.</p>
+				<p>&nbsp;</p>
+				<p><a href="#">Learn more</a></p>
+			</div>
+			<!--diwenzi end-->
+			<div id="diwen2">
+				<p class="hong">Sharing Billboard</p>
+				<p>&nbsp;</p>
+				<p>Facebook</p>
+				<p>Twtiter</p>
+				<p>Google+</p>
+				<p>YouTube</p>
+				<p>Instagram</p>
+				<p>Tumblr</p>
+				<p>Pinterest</p>
+				<p>Spotify</p>
+				<p>Newsletter</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p><a href="#">Terms Of Use Policy Media Kit</a></p>
+				<p>&nbsp;</p>
+			</div>
+			<!--diwen2 end-->
+			<div id="diwen3">
+				<p class="hong">Explore Billboard</p>
+				<p>&nbsp;</p>
+				<p>About Billboard</p>
+				<p> Shop </p>
+				<p>News Archive</p>
+				<p> Photos Archive</p>
+				<p> Videos Archive </p>
+				<p>Magazine Archive </p>
+				<p>Charts Archive</p>
+			</div>
+			<!--diwen3 end-->
+			<div id="diwen4">
+				<p class="hong">Information</p>
+				<p>&nbsp;</p>
+				<p>Mobile</p>
+				<p> Chart Licensing</p>
+				<p> Billboard Events </p>
+				<p>Contact Us </p>
+				<p>Sitemap</p>
+				<p> FAQ </p>
+				<p>Feedback</p>
+				<p> Lyrics</p>
+			</div>
+		</div>
+		<!--di end-->
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Videos</title>
+  <style type="text/css">
+    body {
+      background-color: #000;
+      margin: auto;
+      padding: 0px;
+      text-align: center;
+    }
+
+    #head {
+      height: 50px;
+      background-color: #FFF;
+      padding: 0px;
+      font-family: Verdana, Geneva, sans-serif;
+    }
+
+    #head ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: auto;
+    }
+
+    #head ul li {
+      float: left;
+      margin: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 7%;
+    }
+
+    #head ul li a {
+      text-decoration: none;
+      color: #000;
+      display: block;
+      padding: 15px;
+    }
+
+    #head ul li a:link,
+    #head ul li a:visited {
+      font-size: 18px;
+      color: #000;
+    }
+
+    #head ul li a:hover {
+      background-color: #000;
+      color: #FFF;
+    }
+
+    #v1 {
+      width: 1000px;
+      margin: auto;
+    }
+
+    #pod2 {
+      background-color: #FFF;
+      height: 50px;
+      width: 1000px;
+      clear: none;
+      font-family: Verdana, Geneva, sans-serif;
+    }
+
+    #pod2 ul {
+      list-style-type: none;
+      margin: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+
+    #pod2 ul li {
+      float: left;
+    }
+
+    #pod2 ul li a {
+      color: #000;
+      text-decoration: none;
+      display: block;
+      padding-top: 15px;
+      padding-right: 15px;
+      padding-bottom: 16px;
+      padding-left: 15px;
+    }
+
+    #pod2 ul li a:link,
+    #pod2 ul li a:visited {
+      color: #000;
+      background-color: #FFF;
+    }
+
+    #pod2 ul li a:hover {
+      color: #FFF;
+      background-color: #999;
+    }
+
+    .sosuo {
+      border: 2px solid #1CACE1;
+      padding-right: 15px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      float: right;
+      margin-left: 230px;
+      padding-top: 5px;
+    }
+
+    #form1 {
+      float: right;
+      padding-top: 10px;
+      padding-right: 10px;
+    }
+
+    #v4 {
+      width: 1000px;
+      margin-top: 40px;
+      margin-right: auto;
+      margin-left: auto;
+      height: 330px;
+    }
+
+    #v5 {
+      float: left;
+      margin-right: 35px;
+      color: #FFF;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #v6 {
+      float: left;
+      color: #FFF;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #v7 {
+      float: right;
+    }
+
+    #v8 {
+      width: 1000px;
+    }
+
+    #v9 {
+      float: left;
+      color: #FFF;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #v10 {
+      float: left;
+      margin-left: 35px;
+      color: #FFF;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #v11 {
+      float: right;
+      color: #FFF;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #v12 {
+      float: right;
+      color: #CCC;
+      font-family: Tahoma, Geneva, sans-serif;
+      font-size: 12px;
+    }
+
+    #v13 {
+      background-color: #E5E5E5;
+      height: 300px;
+      width: 100%;
+      margin-top: 120px;
+      margin-bottom: auto;
+      float: left;
+      text-align: center;
+      padding-top: 10px;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 30px;
+    }
+
+    p a:link,
+    p a:visited {
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    p a:hover {
+      text-decoration: underline;
+    }
+
+    .video {
+      color: #F33;
+      font-weight: bold;
+    }
+
+    .youbian {
+      margin-left: 30px;
+    }
+
+    #di {
+      height: 420px;
+      color: #FFF;
+      background-color: #3F413E;
+      float: left;
+      width: 100%;
+      background-image: url(images/di1.jpg);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      font-size: 12px;
+    }
+
+    #conntu {
+      height: 400px;
+      width: 25%;
+      font-size: 9px;
+      color: #000;
+      font-family: Verdana, Geneva, sans-serif;
+      float: left;
+    }
+
+    #diwenzi {
+      color: #FFF;
+      height: 300px;
+      width: 15%;
+      text-align: left;
+      margin-left: 30px;
+      margin-top: 40px;
+      font-size: 9px;
+      float: left;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #di #diwenzi p a:link,
+    #di #diwenzi p a:visited {
+      font-size: 14px;
+      color: #09F;
+      text-decoration: none;
+    }
+
+    #di #diwenzi p a:hover {
+      text-decoration: underline;
+    }
+
+    #diwen2 {
+      height: 300px;
+      width: 18%;
+      float: left;
+      margin-top: 40px;
+      text-align: left;
+      margin-left: 25px;
+      font-family: "Arial Black", Gadget, sans-serif;
+    }
+
+    #di #diwen2 p a:link,
+    #yuan #di #diwen2 p a:visited {
+      color: #999;
+      text-decoration: none;
+      font-size: 10px;
+    }
+
+    #di #diwen2 p a:hover {
+      color: #FFF;
+      text-decoration: underline;
+    }
+
+    #diwen3 {
+      float: left;
+      margin-top: 40px;
+      height: 300px;
+      width: 18%;
+      text-align: left;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #diwen4 {
+      height: 300px;
+      width: 15%;
+      margin-top: 40px;
+      float: left;
+      text-align: left;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hong {
+      color: #FD5757;
+      font-size: 16px;
+    }
+
+    .ditu {
+      padding-left: 40px;
+      padding-bottom: 20px;
+      padding-top: 40px;
+    }
+
+    .di1 {
+      font-size: 10px;
+      padding-left: 30px;
+      margin-left: 3px;
+      margin-top: 20px;
+    }
+  </style>
+  <script type="text/javascript">
+    function MM_swapImgRestore() { //v3.0
+      var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+    function MM_preloadImages() { //v3.0
+      var d = document; if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+        var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+          if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+      }
+    }
+
+    function MM_findObj(n, d) { //v4.01
+      var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+        d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+      }
+      if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+      if (!x && d.getElementById) x = d.getElementById(n); return x;
+    }
+
+    function MM_swapImage() { //v3.0
+      var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+        if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+    }
+  </script>
+</head>
+
+<body onload="MM_preloadImages('images/video17.jpg')">
+  <div id="head">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="new.html">News</a></li>
+      <li><a href="Hot100.html">Hot 100</a></li>
+      <li><a href="Videos.html">Videos</a></li>
+      <li><a href="Podcasts.html">Podcasts</a></li>
+      <li><a href="Charts.html">Charts</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </div>
+  <!--head end-->
+  <div id="v1">
+    <div id="v2"><img src="images/video1.jpg" width="727" height="90" usemap="#Map" border="0" />
+      <map name="Map" id="Map">
+        <area shape="rect" coords="7,8,719,78" href="#" />
+      </map>
+    </div>
+    <div id="pod2">
+      <ul>
+        <li><a href="#">ALL</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Lists</a></li>
+        <li><a href="#">Columns</a></li>
+        <form id="form1" name="form1" method="post" action="">
+          <table width="205" border="0" cellpadding="0" cellspacing="0"">
+        <tr>
+          <td><label for=" textfield"></label>
+            <input name="textfield" type="text" class="sosuo" id="textfield" /></td>
+            <td><img src="images/sosuo.jpg" width="34" height="29" usemap="#Map" border="0" /></td>
+            </tr>
+          </table>
+        </form>
+      </ul>
+    </div>
+    <!--pod2 end-->
+    <div id="v3"><a href="#" onmouseout="MM_swapImgRestore()"
+        onmouseover="MM_swapImage('Image3','','images/video3.jpg',0)"><img src="images/video2.jpg" width="1000"
+          height="65" id="Image3" /></a></div>
+    <div id="v4">
+      <div id="v5">
+        <p><img src="images/video4.jpg" width="310" height="175" usemap="#Map2" border="0" />
+          <map name="Map2" id="Map2">
+            <area shape="rect" coords="9,6,297,168" href="#" />
+          </map>
+        </p>
+        <p class="video">VIDEOS</p>
+        <p><a href="#">Sara Bareilles on Her Dream Broadway<br /> Role and Making the Move to Theater</a></p>
+      </div>
+      <div id="v6">
+        <p><img src="images/video5.jpg" width="309" height="174" usemap="#Map3" border="0" />
+          <map name="Map3" id="Map3">
+            <area shape="rect" coords="7,-8,301,170" href="#" />
+          </map>
+        </p>
+        <p class="video">VIDEOS </p>
+        <p><a href="#">Sia, Justin Bieber &amp; One Direction:<BR /> Real-Time Rewind Ep. 75</a></p>
+      </div>
+      <div id="v7"><a href="#" onmouseout="MM_swapImgRestore()"
+          onmouseover="MM_swapImage('Image6','','images/video7.jpg',0)"><img src="images/video6.jpg" width="308"
+            height="257" id="Image6" /></a></div>
+
+    </div>
+    <!--v4 end-->
+    <div id="v8">
+      <div id="v9">
+        <p><img src="images/video8.jpg" width="308" height="174" usemap="#Map4" border="0" />
+          <map name="Map4" id="Map4">
+            <area shape="rect" coords="7,3,301,172" href="#" />
+          </map>
+        </p>
+        <p class="video">VIDEOS</p>
+        <p><a href="#">5 Seconds of Summer Pick Its Favorite<br /> Pop-Punk Bands</a></p>
+      </div>
+      <div id="v10">
+        <p><img src="images/video9.jpg" width="311" height="174" usemap="#Map5" border="0" />
+          <map name="Map5" id="Map5">
+            <area shape="rect" coords="4,3,306,171" href="#" />
+          </map>
+        </p>
+        <p class="video">VIDEOS</p>
+        <p><a href="#">Adam Lambert's Five '90s Songs He<br /> Wants to Cover</a></p>
+      </div>
+      <div id="v11">
+        <p><img src="images/video10.jpg" width="309" height="175" usemap="#Map6" border="0" />
+          <map name="Map6" id="Map6">
+            <area shape="rect" coords="3,5,304,171" href="#" />
+          </map>
+        </p>
+        <p class="video">VIDEOS</p>
+        <p><a href="3">Thomas Rhett Names His Picks for 5<br /> Smoothest Singers of All Time</a></p>
+      </div>
+    </div>
+    <!--v8 end-->
+
+    <div id="v8">
+      <div id="v9">
+        <p><img src="images/video11.jpg" width="308" height="174" usemap="#Map7" border="0" />
+          <map name="Map7" id="Map7">
+            <area shape="rect" coords="4,2,306,175" href="#" />
+          </map>
+        </p>
+        <p class="video">VIDEOS</p>
+        <p><a href="3">Duran Duran Shares Their Favorite<br /> Music Videos From the '80s and '90s</a></p>
+      </div>
+      <div id="v10">
+        <p><img src="images/video12.jpg" width="311" height="174" usemap="#Map8" border="0" />
+          <map name="Map8" id="Map8">
+            <area shape="rect" coords="6,3,308,174" href="#" />
+          </map>
+        </p>
+        <p class="video">VIDEOS</p>
+        <p><a href="#">Fall Out Boy Picks Its All-Time Favorite<br /> Reunited Bands</a></p>
+      </div>
+      <div id="v11">
+        <p><img src="images/video13.jpg" width="309" height="175" usemap="#Map9" border="0" />
+          <map name="Map9" id="Map9">
+            <area shape="rect" coords="4,6,308,175" href="#" />
+          </map>
+        </p>
+        <p class="video">VIDEOS</p>
+        <p><a href="#">Eddie Van Halen Picks His<br /> All-Time Favorite Guitar Riffs</a></p>
+      </div>
+    </div>
+    <!--v8 end-->
+
+    <div id="v8">
+      <div id="v9">
+        <p><img src="images/video14.jpg" width="308" height="174" usemap="#Map10" border="0" />
+          <map name="Map10" id="Map10">
+            <area shape="rect" coords="3,2,305,170" href="#" />
+          </map>
+        </p>
+        <p class="video">VIDEOS</p>
+        <p><a href="#">Meek Mill Picks His Favorite Hip-Hop<br /> Duets</a></p>
+      </div>
+      <div id="v10">
+        <p><img src="images/video15.jpg" width="311" height="174" usemap="#Map11" border="0" />
+          <map name="Map11" id="Map11">
+            <area shape="rect" coords="4,3,305,172" href="#" />
+          </map>
+        </p>
+        <p class="video">VIDEOS</p>
+        <p><a href="3">Ty Dolla $ign: My Afterparties Are 'a<br /> Lot of Weed, and Booze and Boobs</a>'</p>
+      </div>
+      <div id="v12"><a href="#" onmouseout="MM_swapImgRestore()"
+          onmouseover="MM_swapImage('Image16','','images/video17.jpg',1)"><img src="images/video16.jpg" width="311"
+            height="258" id="Image16" /></a>
+        <p>advertisement</p>
+      </div>
+    </div>
+    <!--v8 end-->
+
+  </div>
+  <!--v1 end-->
+  <div id="v13">
+    <p>News and Features</p>
+    <p><img src="images/billboard-650.jpg" width="225" height="149" usemap="#Map12" class="youbian" border="0" />
+      <map name="Map12" id="Map12">
+        <area shape="rect" coords="5,8,216,139" href="#" />
+      </map>
+      <img src="images/billboard-651.jpg" width="225" height="149" usemap="#Map13" class="youbian" border="0" />
+      <map name="Map13" id="Map13">
+        <area shape="rect" coords="11,11,217,140" href="#" />
+      </map>
+      <img src="images/billboard-652.jpg" width="225" height="149" usemap="#Map14" class="youbian" border="0" />
+      <map name="Map14" id="Map14">
+        <area shape="rect" coords="12,12,216,143" href="#" />
+      </map>
+      <img src="images/billboard-653.jpg" width="225" height="149" usemap="#Map15" class="youbian" border="0" />
+      <map name="Map15" id="Map15">
+        <area shape="rect" coords="2,10,218,140" href="#" />
+      </map>
+    </p>
+  </div>
+
+  <div id="di">
+    <div id="conntu">
+      <img src="images/billboard all star.jpg" width="225" height="293" alt="" / class="ditu">
+      <div class="di1">© 2015 Nova. All Rights Reserved.</div>
+    </div>
+    <!--di conntu end-->
+    <div id="diwenzi">
+      <p class="hong">Magazine</p>
+      <p>&nbsp;</p>
+      <p><a href="#">Customer Service </a>
+      <p><a href="#">Subscribe</a></p>
+      <p><a href="#">Buy this issue</a></p>
+      <p>&nbsp;</p>
+      <p class="hong">Billboard biz</p>
+      <p>&nbsp;</p>
+      <p>The online extension of Billboard magazine, www.billboard.com/biz is the essential online destination for the
+        music business.</p>
+      <p>&nbsp;</p>
+      <p><a href="#">Learn more</a></p>
+    </div>
+    <!--diwenzi end-->
+    <div id="diwen2">
+      <p class="hong">Sharing Billboard </p>
+      <p>Facebook</p>
+      <p>Twtiter</p>
+      <p>Google+</p>
+      <p>YouTube</p>
+      <p>Instagram</p>
+      <p>Tumblr</p>
+      <p>Pinterest</p>
+      <p>Spotify</p>
+      <p>Newsletter </p>
+      <p>Terms Of Use Policy Media Kit</p>
+      <p>&nbsp;</p>
+    </div>
+    <!--diwen2 end-->
+    <div id="diwen3">
+      <p class="hong">Explore Billboard </p>
+      <p>About Billboard</p>
+      <p> Shop </p>
+      <p>News Archive</p>
+      <p> Photos Archive</p>
+      <p> Videos Archive </p>
+      <p>Magazine Archive </p>
+      <p>Charts Archive</p>
+    </div>
+    <!--diwen3 end-->
+    <div id="diwen4">
+      <p class="hong">Information </p>
+      <p>Mobile</p>
+      <p> Chart Licensing</p>
+      <p> Billboard Events </p>
+      <p>Contact Us </p>
+      <p>Sitemap</p>
+      <p> FAQ </p>
+      <p>Feedback</p>
+      <p> Lyrics</p>
+    </div>
+  </div>
+  <!--di end-->
+</body>
+
+</html>

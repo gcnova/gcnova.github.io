@@ -1,0 +1,906 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Hot100</title>
+	<style type="text/css">
+		body {
+			background-color: #000;
+			margin: auto;
+			padding: 0px;
+		}
+
+		#head {
+			height: 50px;
+			background-color: #FFF;
+			padding: 0px;
+			font-family: Verdana, Geneva, sans-serif;
+		}
+
+		#head ul {
+			list-style-type: none;
+			padding: 0px;
+			margin: auto;
+		}
+
+		#head ul li {
+			float: left;
+			margin: 0px;
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 0px;
+			padding-left: 7%;
+		}
+
+		#head ul li a {
+			text-decoration: none;
+			color: #000;
+			display: block;
+			padding: 15px;
+		}
+
+		#head ul li a:link,
+		#head ul li a:visited {
+			font-size: 18px;
+			color: #000;
+		}
+
+		#head ul li a:hover {
+			background-color: #000;
+			color: #FFF;
+		}
+
+		.h1 {
+			margin: auto;
+			height: 500px;
+			color: #FFF;
+			width: 973px;
+		}
+
+		.h3 {
+			width: 973px;
+			text-align: center;
+		}
+
+		.h4 {
+			width: 985px;
+			text-align: left;
+			height: 58px;
+		}
+
+		.h5 {
+			width: 805px;
+			overflow: hidden;
+			float: left;
+		}
+
+		.h6 {
+			float: left;
+			width: 150px;
+			padding-top: 12px;
+		}
+
+		.h7 {
+			width: 973px;
+		}
+
+		.h8 {
+			width: 600px;
+			float: left;
+			height: 100px;
+			border-top-width: 1px;
+			border-bottom-width: 1px;
+			border-top-style: solid;
+			border-bottom-style: solid;
+			border-top-color: #999;
+			border-bottom-color: #999;
+			margin-top: 50px;
+		}
+
+		.h9 {
+			width: 360px;
+			float: right;
+			text-align: right;
+			padding-top: 50px;
+		}
+
+		.h10 {
+			float: left;
+		}
+
+		.h11 {
+			float: left;
+		}
+
+		.h12 {
+			float: left;
+			padding-top: 5px;
+			padding-left: 30px;
+			padding-right: 20px;
+		}
+
+		.h13 {
+			width: 600px;
+			float: left;
+			height: 100px;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: #999;
+		}
+
+		.h14 {
+			background-color: #000;
+			height: 80px;
+			width: 100%;
+			margin: auto;
+		}
+
+		.bkk {
+			float: left;
+			border: 1px solid #999;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			font-family: Arial, Helvetica, sans-serif;
+			color: #09F;
+		}
+
+		.dazi {
+			font-size: 60px;
+			color: #FFF;
+			font-family: Verdana, Geneva, sans-serif;
+			font-weight: bold;
+			height: 60px;
+			padding-left: 50px;
+			padding-top: 10px;
+		}
+
+		.xz {
+			font-family: Verdana, Geneva, sans-serif;
+			color: #CCC;
+			font-size: 12px;
+			padding-left: 25px;
+		}
+
+		.gm {
+			font-family: Verdana, Geneva, sans-serif;
+			font-size: 18px;
+			color: #FFF;
+			padding-left: 30px;
+			font-weight: bold;
+		}
+
+		.gs {
+			float: left;
+			font-size: 12px;
+			color: #069DE2;
+			font-family: Tahoma, Geneva, sans-serif;
+			font-weight: bold;
+		}
+
+		.right {
+			float: right;
+		}
+
+		.di {
+			height: 405px;
+			color: #FFF;
+			background-color: #3F413E;
+			float: left;
+			width: 100%;
+			background-image: url(images/di1.jpg);
+			background-repeat: no-repeat;
+			background-position: right bottom;
+			font-size: 12px;
+			margin-top: 200px;
+		}
+
+		.conntu {
+			height: 400px;
+			width: 25%;
+			font-size: 9px;
+			color: #000;
+			font-family: Verdana, Geneva, sans-serif;
+			float: left;
+		}
+
+		.diwenzi {
+			color: #FFF;
+			height: 300px;
+			width: 15%;
+			text-align: left;
+			margin-left: 30px;
+			margin-top: 40px;
+			font-size: 9px;
+			float: left;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.di .diwenzi p a:link,
+		.di .diwenzi p a:visited {
+			font-size: 14px;
+			color: #09F;
+			text-decoration: none;
+		}
+
+		.di .diwenzi p a:hover {
+			text-decoration: underline;
+		}
+
+		.diwen2 {
+			height: 300px;
+			width: 18%;
+			float: left;
+			margin-top: 40px;
+			text-align: left;
+			margin-left: 25px;
+			font-family: "Arial Black", Gadget, sans-serif;
+		}
+
+		.di .diwen2 p a:link,
+		.yuan .di .diwen2 p a:visited {
+			color: #999;
+			text-decoration: none;
+			font-size: 10px;
+		}
+
+		.di .diwen2 p a:hover {
+			color: #FFF;
+			text-decoration: underline;
+		}
+
+		.diwen3 {
+			float: left;
+			margin-top: 40px;
+			height: 300px;
+			width: 18%;
+			text-align: left;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.diwen4 {
+			height: 300px;
+			width: 15%;
+			margin-top: 40px;
+			float: left;
+			text-align: left;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.hong {
+			color: #FD5757;
+			font-size: 16px;
+		}
+
+		.ditu {
+			margin-left: 40px;
+			margin-bottom: 20px;
+			margin-top: 40px;
+		}
+
+		.di1 {
+			font-size: 10px;
+			margin-left: 50px;
+			margin-top: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function MM_swapImgRestore() { //v3.0
+			var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+		}
+		function MM_preloadImages() { //v3.0
+			var d = document; if (d.images) {
+				if (!d.MM_p) d.MM_p = new Array();
+				var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+					if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+			}
+		}
+
+		function MM_findObj(n, d) { //v4.01
+			var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+				d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+			}
+			if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+			for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+			if (!x && d.getElementById) x = d.getElementById(n); return x;
+		}
+
+		function MM_swapImage() { //v3.0
+			var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+				if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+		}
+	</script>
+</head>
+
+<body onload="MM_preloadImages('images/hot2.jpg','images/hot7.jpg')">
+	<div id="head">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="new.html">News</a></li>
+			<li><a href="Hot100.html">Hot 100</a></li>
+			<li><a href="Videos.html">Videos</a></li>
+			<li><a href="Podcasts.html">Podcasts</a></li>
+			<li><a href="Charts.html">Charts</a></li>
+			<li><a href="login.html">Login</a></li>
+		</ul>
+	</div>
+	<!--head end-->
+	<div class="h1">
+		<div class="h2"><a href="#" onmouseout="MM_swapImgRestore()"
+				onmouseover="MM_swapImage('Image2','','images/hot2.jpg',1)"><img src="images/hot1.jpg" width="973"
+					height="64" id="Image2" /></a></div>
+		<div class="h3">
+			<img src="images/hot3.jpg" width="633" height="108" /> </div>
+		<div class="h4">
+			<div class="h5"><img src="images/hot4.jpg" width="983" height="58" usemap="#Map" border="0" />
+				<map name="Map" id="Map">
+					<area shape="circle" coords="33,27,16" href="login.html" />
+					<area shape="circle" coords="74,27,14" href="login.html" />
+				</map>
+			</div>
+			<div class="h6">
+				<form action="" method="get">
+					<table width="100" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td><label for=""></label>
+								<input type="text" class="bkk" value="Search billboard" size="15" /></td>
+							<td><img src="images/hot5.jpg" width="33" height="33" /></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<!--h4 end-->
+		<div class="h7">
+			<div class="h8">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">1<br />
+					</span><span class="xz">Last Week: 1</span></div>
+				<div class="h12"><img src="images/hot8.jpg" width="92" height="90" /></div>
+				<p class="gm">Hello
+				</p>
+
+				<p class="gs">Adele</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">2<br />
+					</span><span class="xz">Last Week: 3</span></div>
+				<div class="h12"><img src="images/hot13.jpg" /></div>
+				<p class="gm">Hotline Bling
+				</p>
+
+				<p class="gs">Drake</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h9"><img src="images/gg3.jpg" width="297" height="252" /></div>
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">3<br />
+					</span><span class="xz">Last Week: 4</span></div>
+				<div class="h12"><img src="images/hot14.jpg" /></div>
+				<p class="gm">The Hills
+				</p>
+
+				<p class="gs">The Weeknd</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">4<br />
+					</span><span class="xz">Last Week: 2</span></div>
+				<div class="h12"><img src="images/hot15.jpg" width="92" height="90" /></div>
+				<p class="gm">Sorry
+				</p>
+
+				<p class="gs">Justin Bieber</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">5<br />
+					</span><span class="xz">Last Week: 5</span></div>
+				<div class="h12"><img src="images/hot15.jpg" width="92" height="90" /></div>
+				<p class="gm">What Do You Mean?
+				</p>
+
+				<p class="gs">Justin Bieber</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h9"><img src="images/hot10.jpg" /></div>
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">6<br />
+					</span><span class="xz">Last Week: 6</span></div>
+				<div class="h12"><img src="images/hot16.jpg" width="92" height="90" /></div>
+				<p class="gm">Stitches
+				</p>
+
+				<p class="gs">Shawn Mendes</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">7<br />
+					</span><span class="xz">Last Week: --</span></div>
+				<div class="h12"><img src="images/hot17.jpg" width="92" height="90" /></div>
+				<p class="gm">Focus
+				</p>
+
+				<p class="gs">Ariana Grande</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">8<br />
+					</span><span class="xz">Last Week: 7</span></div>
+				<div class="h12"><img src="images/hot18.jpg" width="92" height="90" /></div>
+				<p class="gm">Wildest Dreams
+				</p>
+
+				<p class="gs">Taylor Swift</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">9<br />
+					</span><span class="xz">Last Week: 8</span></div>
+				<div class="h12"><img src="images/hot19.jpg" width="92" height="90" /></div>
+				<p class="gm">679
+				</p>
+
+				<p class="gs">Fetty Wap Featuring Remy Boyz</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">10<br />
+					</span><span class="xz">Last Week: 13</span></div>
+				<div class="h12"><img src="images/hot20.jpg" width="92" height="90" /></div>
+				<p class="gm">Like I'm Gonna Lose You
+				</p>
+
+				<p class="gs">Meghan Trainor Featuring John Legend</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">11<br />
+					</span><span class="xz">Last Week: 9</span></div>
+				<div class="h12"><img src="images/hot21.jpg" width="92" height="90" /></div>
+				<p class="gm">Locked Away
+				</p>
+
+				<p class="gs">R. City Featuring Adam Levine</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">12<br />
+					</span><span class="xz">Last Week: 12</span></div>
+				<div class="h12"><img src="images/hot22.jpg" width="92" height="90" /></div>
+				<p class="gm">Ex's &amp; Oh's
+				</p>
+
+				<p class="gs">Elle King</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">13<br />
+					</span><span class="xz">Last Week: 15</span></div>
+				<div class="h12"><img src="images/hot23.jpg" width="92" height="90" /></div>
+				<p class="gm">Here
+				</p>
+
+				<p class="gs">Alessia Cara</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h9"><img src="images/hot12.jpg" /></div>
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">14<br />
+					</span><span class="xz">Last Week: 10</span></div>
+				<div class="h12"><img src="images/hot14.jpg" width="92" height="90" /></div>
+				<p class="gm">Can't Feel My Face
+				</p>
+
+				<p class="gs">The Weeknd</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">15<br />
+					</span><span class="xz">Last Week: 11</span></div>
+				<div class="h12"><img src="images/hot24.jpg" width="92" height="90" /></div>
+				<p class="gm">Watch Me
+				</p>
+
+				<p class="gs">Silento</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">16<br />
+					</span><span class="xz">Last Week: 14</span></div>
+				<div class="h12"><img src="images/hot13.jpg" width="92" height="90" /></div>
+				<p class="gm">Jumpman
+				</p>
+
+				<p class="gs">Drake & Future</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">17<br />
+					</span><span class="xz">Last Week: 18</span></div>
+				<div class="h12"><img src="images/hot25.jpg" width="92" height="90" /></div>
+				<p class="gm">Same Old Love
+				</p>
+
+				<p class="gs">Selena Gomez</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">18<br />
+					</span><span class="xz">Last Week: 19</span></div>
+				<div class="h12"><img src="images/hot26.jpg" width="92" height="90" /></div>
+				<p class="gm">On My Mind
+				</p>
+
+				<p class="gs">Ellie Goulding</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">19<br />
+					</span><span class="xz">Last Week: 17</span></div>
+				<div class="h12"><img src="images/hot27.jpg" width="92" height="90" /></div>
+				<p class="gm">Lean On
+				</p>
+
+				<p class="gs">Major Lazer & DJ Snake Featuring M0</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h9"><img src="images/chart14.jpg""/></div>
+<div class=" h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">20<br />
+					</span><span class="xz">Last Week: 20</span></div>
+				<div class="h12"><img src="images/hot28.jpg" width="92" height="90" /></div>
+				<p class="gm">Renegades
+				</p>
+
+				<p class="gs">X Ambassadors</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">21<br />
+					</span><span class="xz">Last Week: 16</span></div>
+				<div class="h12"><img src="images/hot29.jpg" width="92" height="90" /></div>
+				<p class="gm">Downtown
+				</p>
+
+				<p class="gs">Macklemore & Ryan Lewis Featuring Eric Nally</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">22<br />
+					</span><span class="xz">Last Week: 22</span></div>
+				<div class="h12"><img src="images/hot19.jpg" width="92" height="90" /></div>
+				<p class="gm">Hit The Quan
+				</p>
+
+				<p class="gs">iLoveMemphis</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">23<br />
+					</span><span class="xz">Last Week: --</span></div>
+				<div class="h12"><img src="images/hot25.jpg" width="92" height="90" /></div>
+				<p class="gm">Tennessee Whiskey
+				</p>
+
+				<p class="gs">Chris Stapleton</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">24<br />
+					</span><span class="xz">Last Week: 23</span></div>
+				<div class="h12"><img src="images/hot19.jpg" width="92" height="90" /></div>
+				<p class="gm">Trap Queen
+				</p>
+
+				<p class="gs">Fetty Wap</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">25<br />
+					</span><span class="xz">Last Week: 21</span></div>
+				<div class="h12"><img src="images/hot25.jpg" width="92" height="90" /></div>
+				<p class="gm">Good For You
+				</p>
+
+				<p class="gs">Selena Gomez Featuring A$AP Rocky</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">26<br />
+					</span><span class="xz">Last Week: 24</span></div>
+				<div class="h12"><img src="images/hot8.jpg" width="92" height="90" /></div>
+				<p class="gm">Drag Me Down
+				</p>
+
+				<p class="gs">One Direction</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">27<br />
+					</span><span class="xz">Last Week: 32</span></div>
+				<div class="h12"><img src="images/hot8.jpg" width="92" height="90" /></div>
+				<p class="gm">Antidote</p>
+
+				<p class="gs">Travi$ Scott</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h13">
+				<div class="h10"><a href="#" onmouseout="MM_swapImgRestore()"
+						onmouseover="MM_swapImage('Image6','','images/hot7.jpg',1)"><img src="images/hot6.jpg"
+							name="Image6" width="33" height="100" id="Image6" /></a></div>
+				<div class="h11"><span class="dazi">28<br />
+					</span><span class="xz">Last Week: 33</span></div>
+				<div class="h12"><img src="images/hot8.jpg" width="92" height="90" /></div>
+				<p class="gm">Die A Happy Man
+				</p>
+
+				<p class="gs">Thomas Rhett</p>
+				<img src="images/hot9.png" width="51" height="48" usemap="#Map2" class="right" border="0" />
+				<map name="Map2" id="Map2">
+					<area shape="circle" coords="27,24,16" href="#" />
+				</map>
+			</div>
+			<!--h8 end-->
+			<div class="h14"></div>
+		</div>
+		<!--h7 end-->
+
+	</div>
+	<!--h1 end-->
+
+	<div class="di">
+		<div class="conntu">
+			<img src="images/billboard all star.jpg" width="225" height="293" alt="" / class="ditu">
+			<div class="di1">
+				©2015 Nova. All Rights Reserved.</div>
+		</div>
+		<!--di conntu end-->
+		<div class="diwenzi">
+			<p class="hong">Magazine</p>
+			<p>&nbsp;</p>
+			<p><a href="#">Customer Service </a>
+			<p><a href="#">Subscribe</a></p>
+			<p><a href="#">Buy this issue</a></p>
+			<p>&nbsp;</p>
+			<p class="hong">Billboard biz</p>
+			<p>&nbsp;</p>
+			<p>The online extension of Billboard magazine, www.billboard.com/biz is the essential online destination for
+				the music business.</p>
+			<p>&nbsp;</p>
+			<p><a href="#">Learn more</a></p>
+		</div>
+		<!--diwenzi end-->
+		<div class="diwen2">
+			<p class="hong">Sharing Billboard </p>
+			<p>Facebook</p>
+			<p>Twtiter</p>
+			<p>Google+</p>
+			<p>YouTube</p>
+			<p>Instagram</p>
+			<p>Tumblr</p>
+			<p>Pinterest</p>
+			<p>Spotify</p>
+			<p>Newsletter </p>
+			<p><a href="#">Terms Of Use Policy Media Kit</a></p>
+			<p>&nbsp;</p>
+		</div>
+		<!--diwen2 end-->
+		<div class="diwen3">
+			<p class="hong">Explore Billboard </p>
+			<p>About Billboard</p>
+			<p> Shop </p>
+			<p>News Archive</p>
+			<p> Photos Archive</p>
+			<p> Videos Archive </p>
+			<p>Magazine Archive </p>
+			<p>Charts Archive</p>
+		</div>
+		<!--diwen3 end-->
+		<div class="diwen4">
+			<p class="hong">Information </p>
+			<p>Mobile</p>
+			<p> Chart Licensing</p>
+			<p> Billboard Events </p>
+			<p>Contact Us </p>
+			<p>Sitemap</p>
+			<p> FAQ </p>
+			<p>Feedback</p>
+			<p> Lyrics</p>
+		</div>
+	</div>
+	<!--di end-->
+</body>
+
+</html>
